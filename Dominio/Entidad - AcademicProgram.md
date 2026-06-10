@@ -1,22 +1,16 @@
 ---
-tags: [dominio, entidad, context]
+tags: [dominio, entidad, university-structure, mvp]
 ---
-# AcademicProgram · _Titulación_
+# AcademicProgram · _Programa académico_
 
-> Un grado, máster o ciclo.
+Grado, máster, postgrado o programa de FP. El scope de programa es necesario para coverage, elegibilidad y targeting de publicaciones.
 
-Qué grados ofrece el tenant, requisitos de prácticas por programa, min/max horas curriculares y extracurriculares, qué asignaturas son practicum.
+| Campo | Nota |
+|---|---|
+| `id`, `university_id`, `academic_unit_id` | |
+| `name`, `level` (bachelor/master/vocational/dual), `status` | |
+| `min_curricular_hours`, `max_extracurricular_hours`, `requires_evaluation` | requisitos de prácticas por programa |
 
-## Campos
-| Campo | Tipo | Nota |
-|---|---|---|
-| `id` | uuid |  |
-| `tenant_id` | fk → Tenant |  |
-| `name` | string | Grado en Dirección Hotelera |
-| `kind` | enum | bachelor | master | vocational | dual |
-| `min_curricular_hours` | int | 250 |
-| `max_extracurricular_hours` | int | 900 |
-| `requires_rubric` | boolean |  |
-| `practicum_course_id` | string? | ID LMS |
+**Relaciones:** [[Entidad - AcademicUnit]] · [[Entidad - PracticePolicy]] · [[Entidad - InstitutionalPosting]] · [[Entidad - UniversityEnrollment]]. **MVP:** Sí.
 
-Relacionado: [[D-06 Convenio curricular + extracurricular]] · [[D-09 Formación dual]] · [[Modelo de dominio (índice)]]
+Relacionado: [[Modelo de dominio (índice)]] · [[D-02 Tutor rol global vs por programa]] · [[D-06 Convenio curricular + extracurricular]] · [[D-09 Formación dual]]

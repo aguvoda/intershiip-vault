@@ -1,27 +1,19 @@
 ---
-tags: [dominio, entidad, core]
+tags: [dominio, entidad, student-access, core, mvp]
 ---
 # Application · _Candidatura_
 
-> Un alumno se apunta o es sugerido a una oferta.
+Candidatura formal o candidato propuesto por la universidad para una [[Entidad - InstitutionalPosting|InstitutionalPosting]]. **Solo alumnos verificados** crean candidaturas formales a prácticas institucionales.
 
-Relación alumno ↔ [[Entidad - Opportunity|oferta]]. Origen: inbound (el alumno se apunta), outbound (Career Service lo sugiere tras casación) o matching asistido (el sistema propone). Guarda el trayecto: aplicado → entrevista → aceptado → confirmado. Se agrupa en un [[Entidad - MatchThread|MatchThread]] por candidato.
+| Campo | Nota |
+|---|---|
+| `id`, `institutional_posting_id`, `student_account_id` | |
+| `source` | applied \| suggested (propuesto por universidad) |
+| `status` | applied / suggested → under_review → interview_pending → selected / rejected / withdrawn / expired |
+| `selected_at`, `rejected_reason` | |
 
-## Campos
-| Campo | Tipo | Nota |
-|---|---|---|
-| `id` | uuid | |
-| `opportunity_id` | fk → Opportunity | |
-| `student_profile_id` | fk → StudentProfile | |
-| `match_thread_id` | fk → MatchThread? | agrupa las candidaturas del alumno |
-| `source` | enum | inbound \| suggested_by_staff \| matched_by_agent |
-| `status` | enum | applied \| viewed \| interview \| offered \| accepted \| declined \| withdrawn |
-| `cover_note` | markdown? | |
-| `match_score` | float? | 0–1 si vino del agent |
-| `match_rationale` | markdown? | por qué el agent lo sugirió |
-| `created_at` | timestamp | |
+> [!note] Al `selected`, una candidatura crea un [[Entidad - PracticeCase|PracticeCase]]. El interés no formal vive en [[Entidad - StudentInterest|StudentInterest]] (no es Application).
 
-> [!note] Nota
-> Al llegar a `status=accepted`, se genera un [[Entidad - InternshipRecord|InternshipRecord]].
+**Relaciones:** [[Entidad - InstitutionalPosting]] · [[Entidad - StudentAccount]] · [[Entidad - PracticeCase]]. **MVP:** Sí.
 
-Relacionado: [[Entidad - MatchThread]] · [[Entidad - Opportunity]] · [[Entidad - InternshipRecord]] · [[Modelo de dominio (índice)]]
+Relacionado: [[Entidad - StudentInterest]] · [[Modelo de dominio (índice)]]

@@ -9,7 +9,7 @@ tags: [tesis, producto]
 > [!info] Estado
 > Decisión de producto **ya tomada** (consagrada en CLAUDE.md). Material de visión, no implementado.
 
-Preparado para integrarse con el stack enterprise de universidades y empresas vía una capa tipo **Kombo** (un modelo unificado en vez de integraciones una a una). Reduce fricción en clientes grandes y evita que las integraciones bloqueen ventas enterprise. Justifica el nivel de 100.000 €/año.
+Preparado para integrarse con el stack enterprise de universidades y empresas vía una capa tipo **Kombo** (un modelo unificado en vez de integraciones una a una). Reduce fricción en clientes grandes y evita que las integraciones bloqueen ventas enterprise. Justifica el nivel **Enterprise (desde 150.000 €/año)**.
 
 > [!check] Veredicto
 > Muy buena para el plan enterprise.

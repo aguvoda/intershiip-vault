@@ -11,11 +11,11 @@ tags: [decision, resuelto]
 |---|---|---|
 | Qué es | Parte del plan de estudios | Voluntaria, fuera del plan |
 | Créditos | Cuenta créditos | No cuenta |
-| Tutor / evaluación | Requiere tutor + [[Entidad - Rubric|rúbrica]] | No requiere |
+| Tutor / evaluación | Requiere tutor + [[Entidad - Avanzadas (fase 2)|evaluación]] | No requiere |
 | Horas | **Mínimo** (ej. 250h) | **Máximo** (ej. 900h) |
 
 ## Consecuencias
-- `modality = curricular | extracurricular | mixed` en [[Entidad - Opportunity|Opportunity]] e [[Entidad - InternshipRecord|InternshipRecord]].
-- En `mixed`: `curricular_hours` declara la parte curricular; el resto es extracurricular. La plantilla de [[Entidad - Agreement|convenio]] lo resuelve con cláusulas condicionales.
+- `modality = curricular | extracurricular | mixed` en [[Entidad - MasterOpportunity|MasterOpportunity]] y [[Entidad - PracticeCase|PracticeCase]].
+- En `mixed`: `curricular_hours` declara la parte curricular; el resto es extracurricular. La plantilla de [[Entidad - SpecificAgreement|convenio]] lo resuelve con cláusulas condicionales.
 
-Relacionado: [[Entidad - InternshipRecord]] · [[Entidad - Agreement]]
+Relacionado: [[Entidad - PracticeCase]] · [[Entidad - SpecificAgreement]] · [[Entidad - PracticePolicy]]

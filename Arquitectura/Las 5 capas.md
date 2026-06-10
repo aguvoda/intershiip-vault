@@ -11,4 +11,7 @@ El [[Sistema de dos capas]] se implementa con cinco capas:
 4. [[Capa - Policy layer]] — reglas por universidad **como datos, no hardcode**. La clave de la escalabilidad.
 5. [[Capa - Agent layer]] — agentes que **asisten sin decidir**.
 
-Relacionado: [[ADR-001 - Relational + Event Log]] · [[Modelo de dominio (índice)]]
+> [!note] Capas técnicas (cómo) vs capas de producto (qué)
+> Estas 5 capas son el **cómo** técnico. El [[Modelo operativo v0.3 (índice)|modelo operativo v0.3]] organiza el **qué** en 8 capas de producto (network activation, relationship, opportunity distribution, student access, practice operations, revenue/reward…). Conviven.
+
+Relacionado: [[ADR-001 - Relational + Event Log]] · [[Modelo de dominio (índice)]] · [[Modelo operativo v0.3 (índice)]]

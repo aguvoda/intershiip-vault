@@ -11,7 +11,7 @@ tags: [negocio, roadmap]
 | **Q4 2026** | IA, analítica interuniversitaria, exploración LATAM | +20.000 € MRR, preparación Serie A |
 
 ## MVP — incluido
-[[Entidad - InternshipRecord|InternshipRecord]] (ciclo completo) · validación universitaria · generación de convenio desde plantilla · coordinación de firma multipartes · [[Capa - Event log|event log]] · [[Capa - State machine|state machine]] · export de paquete de auditoría · RBAC (Admin/Staff/Supervisor/Empresa/Alumno).
+[[Entidad - PracticeCase|PracticeCase]] (ciclo completo) · validación universitaria · generación de convenio desde plantilla · coordinación de firma multipartes · [[Capa - Event log|event log]] · [[Capa - State machine|state machine]] · export de paquete de auditoría · RBAC ([[Cuentas, roles y trust levels|por scope]]). Detalle: [[MVP v0.3]].
 
 ## Post-MVP — excluido
 Marketplace masivo · matching avanzado IA · analítica interuniversitaria · automatización agresiva · integraciones ATS/LMS completas · employer branding · analítica predictiva · expansión LATAM.

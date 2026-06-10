@@ -8,4 +8,7 @@ Cada universidad tiene sus reglas: horas mínimas, documentación obligatoria, s
 > [!important] Por qué importa
 > Es lo que hace el sistema **escalable** (configurar, no reprogramar, para cada cliente) y una **barrera de salida**: cuanto más personalizado, más difícil de reemplazar ([[Moat (ventaja competitiva)]]).
 
-Entidad asociada: [[Entidad - PolicySet]]. Decisión relacionada de chat: [[D-08 Chat quién inicia con quién]].
+> [!note] Jerarquía de override (v0.3)
+> Política de **programa** sobreescribe la de **unidad académica**, que sobreescribe la de **universidad**.
+
+Entidad asociada: [[Entidad - PracticePolicy]] (sustituye `PolicySet` v0.2). Permisos por scope: [[Cuentas, roles y trust levels]].

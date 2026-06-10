@@ -1,23 +1,16 @@
 ---
-tags: [dominio, entidad, actor]
+tags: [dominio, entidad, student-access]
 ---
 # Person · _Persona_
 
-> Un ser humano. Puede tener múltiples roles.
+Capa de identidad humana que puede conectar varios emails/cuentas en el tiempo. Útil para deduplicación (un ex-alumno que también es HR de empresa — caso real CETT).
 
-Entidad única para cualquier humano. Los roles (alumno, staff, HR, tutor) son asignaciones, no tipos. Una persona puede ser ex-alumno + HR de empresa a la vez — caso real del CETT.
+| Campo | Nota |
+|---|---|
+| `id`, `status` | unverified \| merged \| verified |
 
-## Campos
-| Campo | Tipo | Nota |
-|---|---|---|
-| `id` | uuid |  |
-| `email` | string | único global |
-| `full_name` | string |  |
-| `avatar_url` | string? |  |
-| `phone` | string? |  |
-| `linkedin_url` | string? |  |
+**MVP:** Parcial — puede mantenerse simple si los imports están controlados. **Dedupe:** email institucional, ID de estudiante, email personal → merge de Person con registros de matrícula específicos.
 
-> [!note] Nota
-> NO lleva tenant_id. Las [[Entidad - Membership|Memberships]] la conectan a tenants y roles.
+**Relaciones:** [[Entidad - StudentAccount]] · [[Entidad - UniversityEnrollment]].
 
-Relacionado: [[Entidad - Membership]] · [[Modelo de dominio (índice)]]
+Relacionado: [[Modelo de dominio (índice)]]

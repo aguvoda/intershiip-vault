@@ -6,7 +6,7 @@ tags: [negocio, modelo, palantir]
 Internshiip.com se construye con la lógica de Palantir aplicada al sector educativo-laboral español.
 
 - No se vende software, se vende **ontología operativa sobre los datos institucionales del cliente**.
-- [[Entidad - InternshipRecord|InternshipRecord]] = ontología. [[Capa - Event log|Event log]] = Foundry.
+- El **grafo de relaciones** ([[Entidad - InstitutionalRelationship|InstitutionalRelationship]]) + [[Entidad - PracticeCase|PracticeCase]] = ontología. [[Capa - Event log|Event log]] = Foundry.
 - **Implantación profunda antes que escala**: una universidad, integración quirúrgica, coste de salida imposible, luego expansión.
 - El moat es el dato institucional ([[Moat (ventaja competitiva)]]).
 - **Human-in-the-loop irrenunciable**: los [[Capa - Agent layer|agentes]] coordinan y proponen, nunca firman ni cambian estados sin actor humano.

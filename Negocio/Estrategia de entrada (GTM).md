@@ -19,4 +19,7 @@ tags: [negocio, gtm]
 > [!question] Pendiente
 > ¿[[CETT (cliente piloto)|CETT]] es oficialmente la Fase 1? Hay discovery real pero sin formalizar.
 
-Relacionado: [[Modelo de referencia - Palantir]]
+> [!note] Ejecución pública de la Fase 1
+> La Fase 1 se vende públicamente como **[[Founding Partner Program]]** (acceso limitado, condiciones preferentes). Ver [[Posicionamiento y mensaje]], [[Cliente ideal (ICP)]] y [[Plan de lanzamiento 30 días]].
+
+Relacionado: [[Modelo de referencia - Palantir]] · [[Founding Partner Program]] · [[Pricing]]

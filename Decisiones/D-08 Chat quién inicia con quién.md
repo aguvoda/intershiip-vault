@@ -11,7 +11,7 @@ tags: [decision, resuelto]
 - **Universidad / Career Service → (alumno / empresa):** puede iniciar.
 - **Alumno:** **no puede iniciar**; solo **responde** a conversaciones abiertas por empresa o universidad.
 
-> [!note] Implicación de modelado
-> En [[Entidad - Conversation y Message|Conversation]], al crear el hilo se valida que el iniciador tenga `role` ∈ {company_hr, staff/tutor}. El alumno aparece como participante pero no como creador. Reduce spam y protege al alumno.
+> [!info] Estado en v0.3
+> El **chat/mensajería no está en el MVP v0.3** (no hay entidad Conversation en el catálogo). La regla se conserva como **principio de producto** para cuando se implemente: al crear un hilo, el iniciador debe ser empresa o universidad (staff/tutor); el alumno solo participa/responde. Coherente con "no queremos que el alumno aplique a todo" ([[Posicionamiento y mensaje]]).
 
-Relacionado: [[Entidad - Conversation y Message]] · [[Capa - Policy layer]]
+Relacionado: [[Capa - Policy layer]] · [[MVP v0.3]]
